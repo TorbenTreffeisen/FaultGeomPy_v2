@@ -1,0 +1,5 @@
+qtpy
+matplotlib.pyplot
+math
+csv
+
