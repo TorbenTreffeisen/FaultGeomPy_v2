@@ -818,9 +818,9 @@ class MainWindow(QtWidgets.QMainWindow):
         vsel_sur = [ansform_vsel_st_end(faultcore_areas + 4, faultcore_areas + 13)]
         cm_volu_sur = [ansform_cm("sur_volu", "V")]
 
-        ansys_out = 1
 
-        if ansys_out == 1:
+
+        if self.ui.ans_outwrite.isChecked():
             outwrite = writeout_ansys(thickness, fault_model, hint_lines, area_model, asel_fc, cm_fc, asel_innerfc,
                                       cm_innerfc, asel_dz1, asel_dz2, asel_dz3, asel_dz4, cm_dz1, cm_dz2, cm_dz3,
                                       cm_dz4,
